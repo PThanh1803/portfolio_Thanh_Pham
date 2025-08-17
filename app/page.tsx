@@ -306,10 +306,10 @@ export default function Portfolio() {
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className={`writing-mode-vertical text-sm font-medium transition-colors hover:text-cyan-400 ${
+              className={` text-sm font-medium transition-colors hover:text-cyan-400 ${
                 activeSection === item.id ? "text-cyan-400" : "text-gray-400"
               }`}
-              style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
+              
             >
               {item.label}
             </button>
